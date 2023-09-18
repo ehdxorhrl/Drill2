@@ -55,11 +55,11 @@ while(1):
         grass.draw_now(400,30)
         character.draw_now(x,y)
         delay(0.01)
-    while(r<630):
+    while(r>-90):
         clear_canvas_now()
         grass.draw_now(400,30)
         character.draw_now(x,y)
-        r=r+3
+        r=r-3
         x = 255*math.cos(r/360*2*math.pi)+400
         y = 255*math.sin(r/360*2*math.pi)+345
         delay(0.01)
